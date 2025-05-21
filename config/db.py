@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine, MetaData
 
-engine = create_engine(
-    "mysql+pymysql://root:password@localhost:3306/prueba_salud_movil")
+DATABASE_URL = "mysql+pymysql://sql5780309:AusnA15wXD@sql5.freesqldatabase.com/sql5780309"
+
+engine = create_engine(DATABASE_URL)
 
 meta = MetaData()
